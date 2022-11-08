@@ -3,16 +3,17 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: 22px;
-}
-
-.card-layout {
-    position: relative;
-    width: 335px;
+    max-width: 340px;
     height: 255px;
     border-radius: 10px;
     background-color: $text-color-orange-primary;
     overflow: hidden;
+}
+
+.card-layout {
+    position: relative;
+    height: 100%;
+    width: 100%;
     z-index: 1;
         &::before {
             content: '';
@@ -34,7 +35,7 @@
     h2 {
         position: absolute;
         bottom: 0;
-        padding: 15px 20px;
+        padding: 0 20px;
         font-size: 18px;
         font-weight: 500;
         line-height: 142.6%;
