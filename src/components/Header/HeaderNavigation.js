@@ -4,7 +4,7 @@ import './HeaderNavigation.scss'
 
 const HeaderNavigation = () => {
     return (
-        <header className="headerNavigation">
+        <header className="header-navigation">
             <img id='logo-header' src="./logo.png" alt="logo kasa" />
             <ul className='navigation'>
                 <NavLink to='/'>

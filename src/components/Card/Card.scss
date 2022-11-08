@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.card-layout {
+    position: relative;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    background-color: $text-color-orange-primary;
+    overflow: hidden;
+    z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
+            z-index: 1;
+        }
+
+    .card-cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    h2 {
+        position: absolute;
+        bottom: 0;
+        padding: 15px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 142.6%;
+        color: $text-color-white;
+        z-index: 1;
+    }
+}
