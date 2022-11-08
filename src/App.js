@@ -10,13 +10,15 @@ import Footer from './components/Footer/Footer';
 const App = () => {
   return (
     <BrowserRouter>
-      <HeaderNavigation />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/housing/:id' element={<Housing />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <div className="wrapper">
+        <HeaderNavigation />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/housing/:id' element={<Housing />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
