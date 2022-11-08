@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import FetchApi from '../../datas/FetchApi'
+import Caroussel from '../../components/Carousel/Carousel';
 import './Housing.scss';
 
 
@@ -24,7 +25,7 @@ const Housing = () => {
 
     return (
         <div className='housing-container'>
-            <img src={housing.pictures} alt={housing.title} />
+            <Caroussel img={housing.pictures} alt={housing.title} />
             <h2 className='housing-title'>{housing.title}</h2>
             <h3 className='housing-location'>{housing.location}</h3>
 
