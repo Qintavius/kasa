@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 // COLORS
 $text-color-orange-primary: #FF6060;
 $text-color-white: #ffffff;
