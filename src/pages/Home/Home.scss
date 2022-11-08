@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     gap: 22px;
-    padding: 0 20px 22px;
     overflow-x: hidden;
 
-    .cards {
+    .gallery {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 22px;
         flex-grow: 1;
     }
