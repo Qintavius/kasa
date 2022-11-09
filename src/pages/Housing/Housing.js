@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import FetchApi from '../../datas/FetchApi'
-import Caroussel from '../../components/Carousel/Carousel';
+import FetchApi from '../../datas/FetchApi';
+import Carousel from '../../components/Carousel/Carousel';
 import './Housing.scss';
 
 
@@ -16,7 +16,7 @@ const Housing = () => {
 
         (async function fetchData() {
             const data = await FetchApi.get('../logements.json')
-            const display = data.filter((location) => location.id === id)[0]
+            const display = data.filter((house) => house.id === id)[0]
 
             setHousing(display)
         })()
@@ -25,7 +25,7 @@ const Housing = () => {
 
     return (
         <div className='housing-container'>
-            <Caroussel img={housing.pictures} alt={housing.title} />
+            <Carousel img={housing.pictures} />
             <h2 className='housing-title'>{housing.title}</h2>
             <h3 className='housing-location'>{housing.location}</h3>
 
