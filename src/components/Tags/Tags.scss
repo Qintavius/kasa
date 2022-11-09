@@ -1,0 +1,19 @@
+@import '../../styles/index.scss';
+
+.housing-tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 18px;
+    color: $text-color-white;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: $text-color-orange-primary;
+}
