@@ -1,14 +1,31 @@
+@import '../../styles/settings.scss';
+
 .home-container {
     display: flex;
     flex-direction: column;
     gap: 22px;
     overflow-x: hidden;
+    flex-grow: 1;
 
-    .gallery {
+    .gallery-layout{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 22px;
-        flex-grow: 1;
+        border-radius: 25px;
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .gallery-layout {
+            padding: 56px;
+            background-color: $layout-background-gallery;
+
+            .gallery {
+                justify-content: space-evenly;
+            }
+        }
     }
 }

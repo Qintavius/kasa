@@ -24,7 +24,8 @@
 
     button {
         position: absolute;
-        width: 20px;
+        width: 15px;
+        height: 15px;
         right: 10px;
         cursor: pointer;
     }
@@ -47,7 +48,7 @@
 
         ul, p {
             width: 100%;
-            padding: 0 10px;
+            padding: 10px 10px 5px;
             color: $text-color-orange-primary;
             font-size: 12px;
             font-weight: 500;

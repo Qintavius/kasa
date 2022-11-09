@@ -22,11 +22,13 @@ const Home = () => {
         <section className='home-container'>
             <Banner />
 
-            <div className="gallery">
-                {
-                    housing.map((house) =>
-                        <Card key={house.id} house={house} />)
-                }
+            <div className="gallery-layout">
+                <div className="gallery">
+                    {
+                        housing.map((house) =>
+                            <Card key={house.id} house={house} />)
+                    }
+                </div>
             </div>
         </section>
     );

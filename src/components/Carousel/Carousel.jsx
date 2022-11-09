@@ -16,7 +16,7 @@ const Carousel = (props) => {
 
     const prev = () => {
         setCurrentImg(currentImg = currentImg - 1)
-        console.log(currentImg);
+
         if (currentImg < 0) {
             setCurrentImg(props.img.length - 1)
             return
@@ -29,10 +29,10 @@ const Carousel = (props) => {
                 <img className='current-img' src={props.img && props.img[currentImg]} />
             </div>
 
-            <button className={`prev-button ${(props.img && props.img.length === 1)}`} onClick={prev}>
+            <button className={`prev-button ${(props.img && props.img.length === 1) ? "btn-hidden" : ""}`} onClick={prev}>
                 <img src="../caret.png" alt="bouton précédent" />
             </button>
-            <button className={`next-button ${(props.img && props.img.length === 1)}`} onClick={next}>
+            <button className={`next-button ${(props.img && props.img.length === 1) ? "btn-hidden" : ""}`} onClick={next}>
                 <img src="../caret.png" alt="bouton suivant" />
             </button>
         </div>

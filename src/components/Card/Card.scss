@@ -3,8 +3,9 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    width: 340px;
+    max-width: 340px;
     height: 255px;
+    margin: 10px;
     border-radius: 10px;
     background-color: $text-color-orange-primary;
     overflow: hidden;
@@ -35,7 +36,7 @@
     h2 {
         position: absolute;
         bottom: 0;
-        padding: 0 20px;
+        padding: 20px;
         font-size: 18px;
         font-weight: 500;
         line-height: 142.6%;
