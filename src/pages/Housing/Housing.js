@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import FetchApi from '../../datas/FetchApi';
 import Carousel from '../../components/Carousel/Carousel';
+import Tags from '../../components/Tags/Tags';
 import './Housing.scss';
 
 
@@ -28,7 +29,7 @@ const Housing = () => {
             <Carousel img={housing.pictures} />
             <h2 className='housing-title'>{housing.title}</h2>
             <h3 className='housing-location'>{housing.location}</h3>
-
+            <Tags tags={housing.tags} />
         </div>
     );
 };
