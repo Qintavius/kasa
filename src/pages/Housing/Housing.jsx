@@ -7,6 +7,7 @@ import Carousel from '../../components/Carousel/Carousel';
 import Tags from '../../components/Tags/Tags';
 import DropdownEquipments from '../../components/Dropdown/DropdownEquipments';
 import DropdownDescription from '../../components/Dropdown/DropdownDescription';
+import Host from '../../components/Host/Host';
 
 
 const Housing = () => {
@@ -32,9 +33,10 @@ const Housing = () => {
             <h2 className='housing-title'>{housing.title}</h2>
             <h3 className='housing-location'>{housing.location}</h3>
             <Tags tags={housing.tags} />
+            <Host name={housing.host && housing.host.name} img={housing.host && housing.host.picture} />
             <div className="dropdown-container">
-                <DropdownDescription description={housing.description}/>
-                <DropdownEquipments equipments={housing.equipments} />    
+                <DropdownDescription description={housing.description} />
+                <DropdownEquipments equipments={housing.equipments} />
             </div>
         </div>
     );
