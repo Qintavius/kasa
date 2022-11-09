@@ -30,10 +30,10 @@ const Carousel = (props) => {
             </div>
 
             <button className={`prev-button ${(props.img && props.img.length === 1)}`} onClick={prev}>
-                <img src="../caretCarousel.png" alt="bouton précédent" />
+                <img src="../caret.png" alt="bouton précédent" />
             </button>
             <button className={`next-button ${(props.img && props.img.length === 1)}`} onClick={next}>
-                <img src="../caretCarousel.png" alt="bouton suivant" />
+                <img src="../caret.png" alt="bouton suivant" />
             </button>
         </div>
     );

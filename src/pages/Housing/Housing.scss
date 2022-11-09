@@ -1,5 +1,14 @@
 .housing-container {
     display: flex;
     flex-direction: column;
-    
+    gap: 16px;
+    overflow-x: hidden;
+
+    .dropdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
 }

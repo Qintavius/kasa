@@ -2,6 +2,7 @@
 
 .housing-tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -9,8 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 84px;
+    width: fit-content;
     height: 18px;
+    padding: 0 10px;
     color: $text-color-white;
     border-radius: 5px;
     font-size: 10px;

@@ -1,10 +1,12 @@
 import React from 'react';
+import './Housing.scss';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import FetchApi from '../../datas/FetchApi';
 import Carousel from '../../components/Carousel/Carousel';
 import Tags from '../../components/Tags/Tags';
-import './Housing.scss';
+import DropdownEquipments from '../../components/Dropdown/DropdownEquipments';
+import DropdownDescription from '../../components/Dropdown/DropdownDescription';
 
 
 const Housing = () => {
@@ -30,6 +32,10 @@ const Housing = () => {
             <h2 className='housing-title'>{housing.title}</h2>
             <h3 className='housing-location'>{housing.location}</h3>
             <Tags tags={housing.tags} />
+            <div className="dropdown-container">
+                <DropdownDescription description={housing.description}/>
+                <DropdownEquipments equipments={housing.equipments} />    
+            </div>
         </div>
     );
 };
