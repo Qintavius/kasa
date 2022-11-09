@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-// "BODY" without footer (fix footer floating)
+// "BODY" wrapper without footer (fix footer floating)
 .wrapper {
     display: flex;
     flex-direction: column;
