@@ -36,11 +36,11 @@
     }
     
     .caret-open {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
 
     .caret-close {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
     }
 
     .dropdown-content {
