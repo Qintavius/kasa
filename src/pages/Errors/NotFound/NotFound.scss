@@ -1,0 +1,41 @@
+@import "../../../styles/settings.scss";
+
+.notfound-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    color: $text-color-orange-primary;
+
+    .error-number {
+        font-size: clamp(6rem, 0.7977rem + 22.1965vw, 18rem);
+        font-weight: 700;
+    }
+
+    .error-message {
+        width: 80%;
+        text-align: center;
+        font-size: clamp(1.125rem, 0.6373rem + 2.0809vw, 2.25rem);
+        font-weight: 500;
+        line-height: 142.6%;
+    }
+
+    .error-link {
+        margin-top: 20%;
+        font-size: clamp(0.875rem, 0.7666rem + 0.4624vw, 1.125rem);
+        font-weight: 500;
+        color: $text-color-orange-primary;
+
+        p {
+            border-bottom: 1px solid white;
+            transition: .2s ease;
+            &:hover {
+                border-bottom: 1px solid $text-color-orange-primary;
+            }
+        }
+    }
+}

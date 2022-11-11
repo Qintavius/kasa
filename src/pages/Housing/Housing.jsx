@@ -31,15 +31,20 @@ const Housing = () => {
     return (
         <div className='housing-container'>
             <Carousel img={housing.pictures} />
-            <div className="housing-title-location">
-                <h2 className='housing-title'>{housing.title}</h2>
-                <h3 className='housing-location'>{housing.location}</h3>
+
+            <div className="housing-inner-container">
+                <div className="housing-title-location">
+                    <h2 className='housing-title'>{housing.title}</h2>
+                    <h3 className='housing-location'>{housing.location}</h3>
+                    <Tags tags={housing.tags} />
+                </div>
+
+                <div className="rating-host-container">
+                    <Rating rating={housing.rating}/>
+                    <Host name={housing.host && housing.host.name} img={housing.host && housing.host.picture} />
+                </div>
             </div>
-            <Tags tags={housing.tags} />
-            <div className="rating-host-container">
-                <Rating rating={housing.rating}/>
-                <Host name={housing.host && housing.host.name} img={housing.host && housing.host.picture} />
-            </div>
+            
             <div className="dropdown-container">
                 <DropdownDescription description={housing.description} />
                 <DropdownEquipments equipments={housing.equipments} />

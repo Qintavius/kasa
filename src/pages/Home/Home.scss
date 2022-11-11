@@ -3,28 +3,31 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    gap: 22px;
     overflow-x: hidden;
     flex-grow: 1;
 
     .gallery-layout{
         display: flex;
         border-radius: 25px;
+        margin-bottom: 60px;
 
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
+            transition: .5s linear;
         }
     }
 
     @media screen and (min-width: 700px) {
         .gallery-layout {
-            padding: 56px;
             background-color: $layout-background-gallery;
 
             .gallery {
-                justify-content: space-evenly;
+                margin: 50px;
+                justify-content: center;
+                gap: 60px;
             }
         }
     }
