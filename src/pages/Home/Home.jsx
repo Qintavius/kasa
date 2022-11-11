@@ -1,21 +1,17 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import FetchApi from '../../datas/FetchApi';
+// import FetchApi from '../../datas/FetchApi';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import './Home.scss';
+import logements from './../../datas/logements.json';
 
 const Home = () => {
 
-    const [housing, setHousing] = useState([])
+    const [housing, setHousing] = useState(logements)
 
     useEffect(() => {
-
-        (async function fetchData() {
-            const data = await FetchApi.get('../logements.json')
-            setHousing(data)
-        })()
-
+            setHousing(logements)
     }, [])
 
     return (
