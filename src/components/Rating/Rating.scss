@@ -1,6 +1,15 @@
 .rating {
     display: inline-flex;
-    width: 18px;
-    height: 18px;
+    width: max-content;
+    height: 15px;
     gap: 2px;
+    transition: .5s;
+
+    img {
+        height: 100%;
+    }
+
+    @media screen and (min-width: 700px) {
+        height: 30px;
+    }
 }

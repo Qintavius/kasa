@@ -26,14 +26,14 @@ const Carousel = (props) => {
     return (
         <div className="carousel-wrapper">
             <div className="carousel-inner">
-                <img className='current-img' src={props.img && props.img[currentImg]} />
+                <img className='current-img' src={props.img && props.img[currentImg]} alt={props.title}/>
             </div>
 
             <button className={`prev-button ${(props.img && props.img.length === 1) ? "btn-hidden" : ""}`} onClick={prev}>
-                <img src="../caret.png" alt="bouton précédent" />
+                <img src="../caret.svg" alt="bouton précédent" />
             </button>
             <button className={`next-button ${(props.img && props.img.length === 1) ? "btn-hidden" : ""}`} onClick={next}>
-                <img src="../caret.png" alt="bouton suivant" />
+                <img src="../caret.svg" alt="bouton suivant" />
             </button>
         </div>
     );

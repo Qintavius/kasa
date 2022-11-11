@@ -12,20 +12,36 @@
         position: relative;
         width: min-content;
         text-align: end;
-        font-size: 12px;
+        font-size: clamp(0.75rem, 0.5333rem + 0.9245vw, 1.125rem);
         font-weight: 500;
         color: $text-color-orange-primary;
     }
 
     .avatar {
         position: relative;
-        height: 100%;
+        height: 33px;
         min-width: 33px;
         border-radius: 50%;
         overflow: hidden;
+        transition: .5s;
 
         img {
             object-fit: contain;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .host-wrapper {
+        height: 64px;
+    
+        .avatar {
+            min-width: 64px;
+            height: 64px;
+    
+            img {
+                object-fit: contain;
+            }
         }
     }
 }

@@ -4,22 +4,28 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 582px;
-    height: fit-content;
+    width: 100%;
+    max-width: 582px;
+    height: max-content;
     border-radius: 5px;
     background-color: $layout-background-gallery;
-    overflow-x: hidden;
 
     .dropdown {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 30px;
-        padding: 10px;
+        height: auto;
+        padding: clamp(0.625rem, 0.4442rem + 0.7716vw, 0.9375rem) clamp(0.6875rem, 0.4343rem + 1.0802vw, 1.125rem);
         border-radius: 5px;
         background-color: $text-color-orange-primary;
+        font-size: clamp(0.8125rem, 0.5145rem + 1.2717vw, 1.5rem);
+        font-weight: 500;
         color: $text-color-white;
         text-transform: capitalize;
+
+        @media screen and (min-width: 700px) {
+            border-radius: 10px;
+        }
     }
 
     button {
@@ -28,6 +34,11 @@
         height: 15px;
         right: 10px;
         cursor: pointer;
+
+        @media screen and (min-width: 700px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     .caret {
@@ -37,25 +48,111 @@
     }
     
     .caret-open {
-        transform: rotate(-90deg);
+        transform: rotate(180deg);
     }
 
     .caret-close {
-        transform: rotate(90deg);
+        transform: rotate(0deg);
+    }
+
+    .dropdown-content {
+        ul, p {
+            width: 100%;
+            padding: 20px 10px 10px;
+            color: $text-color-orange-primary;
+            font-size: clamp(0.75rem, 0.5333rem + 0.9245vw, 1.125rem);
+            font-weight: 400;
+
+            li {
+                line-height: 142.6%;
+            }
+
+            @media screen and (min-width: 700px) {
+                padding: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        border-radius: 10px;
+    }
+}
+
+.dropdown-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 1023px;
+    height: max-content;
+    border-radius: 5px;
+    background-color: $layout-background-gallery;
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: clamp(0.625rem, 0.4442rem + 0.7716vw, 0.9375rem) clamp(0.6875rem, 0.4343rem + 1.0802vw, 1.125rem);
+        border-radius: 5px;
+        background-color: $text-color-orange-primary;
+        font-size: clamp(0.8125rem, 0.5145rem + 1.2717vw, 1.5rem);
+        font-weight: 500;
+        color: $text-color-white;
+        text-transform: capitalize;
+
+        @media screen and (min-width: 700px) {
+            border-radius: 10px;
+        }
+    }
+
+    button {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: 10px;
+        cursor: pointer;
+
+        @media screen and (min-width: 700px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .caret {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .caret-open {
+        transform: rotate(180deg);
+    }
+
+    .caret-close {
+        transform: rotate(0);
     }
 
     .dropdown-content {
 
         ul, p {
             width: 100%;
-            padding: 10px 10px 5px;
+            padding: 20px 10px 10px;
             color: $text-color-orange-primary;
-            font-size: 12px;
-            font-weight: 500;
+            font-size: clamp(0.75rem, 0.4249rem + 1.3873vw, 1.5rem);
+            font-weight: 400;
 
             li {
                 line-height: 142.6%;
             }
+
+            @media screen and (min-width: 700px) {
+                padding: 20px;
+            }
         }
+    }
+    
+    @media screen and (min-width: 700px) {
+        border-radius: 10px;
     }
 }

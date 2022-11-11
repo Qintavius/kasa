@@ -11,11 +11,23 @@
     justify-content: center;
     align-items: center;
     width: fit-content;
-    height: 18px;
+    height: auto;
     padding: 0 10px;
-    color: $text-color-white;
     border-radius: 5px;
-    font-size: 10px;
-    font-weight: 500;
     background-color: $text-color-orange-primary;
+    transition: .5s;
+    
+    span {
+        font-size: clamp(0.625rem, 0.4803rem + 0.6173vw, 0.875rem);
+        font-weight: 500;
+        line-height: 142.6%;
+        color: $text-color-white;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .tag {
+        border-radius: 10px;
+    }
+
 }

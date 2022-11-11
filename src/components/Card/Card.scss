@@ -5,10 +5,18 @@
     flex-direction: column;
     max-width: 340px;
     height: 255px;
-    margin: 10px;
     border-radius: 10px;
     background-color: $text-color-orange-primary;
     overflow: hidden;
+    transition: .35s ease;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.308);
+    }
+
+    @media screen and (min-width: 700px) {
+        height: 340px;
+    }
 }
 
 .card-layout {

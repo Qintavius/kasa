@@ -7,8 +7,9 @@ footer {
     justify-content: center;
     min-width: 100%;
     height: 209px;
+    gap: 30px;
     text-align: center;
-    font-size: 12px;
+    font-size: clamp(0.75rem, 0.3166rem + 1.849vw, 1.5rem);
     background-color: black;
     color: $text-color-white;
     margin-top: auto;

@@ -5,22 +5,30 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0 0 16px;
     overflow-x: hidden;
+    transition: .5s;
 
     #logo-header {
-        width: 145px;
+        width: fit-content;
         height: 47px;
+        transition: .5s;
+        
+        @media screen and (min-width: 700px) {
+            height: 68px;
+        }
     }
 
     .navigation {
         display: flex;
-        font-size: 12px;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 260px;
+        font-size: clamp(0.75rem, 0.4249rem + 1.3873vw, 1.5rem);
         font-weight: 500;
-        text-transform: uppercase;
         
         a {
             color: $text-color-orange-primary;
-            
             &.active > li::before {
                 width: 100%;
             }
@@ -29,15 +37,33 @@
         li {
             position: relative;
             margin-left: 10px;
+            text-transform: uppercase;
             &::before {
                 content: '';
                 position: absolute;
                 width: 0%;
-                height: 1.5px;
+                height: 1px;
+                border-radius: 5px;
                 bottom: 0;
                 background-color: $text-color-orange-primary;
-                transition: .25s ease;
+                transition: .35s ease;
+
+                @media screen and (min-width: 700px) {
+                    height: 2px;
+                }
+            }
+
+            @media screen and (min-width: 700px) {
+                text-transform: capitalize;
             }
         }
+
+        @media screen and (min-width: 700px) {
+            justify-content: space-between; 
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        margin: 40px 0 20px;
     }
 }
