@@ -41,8 +41,8 @@ const Housing = () => {
             </div>
             
             <div className="dropdown-container">
-                <DropdownDescription description={housing.description} />
-                <DropdownEquipments equipments={housing.equipments} />
+                <DropdownDescription title="description" description={housing.description} />
+                <DropdownEquipments title="équipements" equipments={housing.equipments} />
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import AboutBanner from '../../components/Banner/AboutBanner';
 import DropdownAbout from '../../components/Dropdown/DropdownAbout';
 import './About.scss';
 
-const About = (props) => {
+const About = () => {
 
     const fiability = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.";
     const respect = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
