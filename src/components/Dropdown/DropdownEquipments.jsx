@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useRef } from 'react';
 import './DropdownEquipements.scss';
 import caret from '../../assets/caret.svg';

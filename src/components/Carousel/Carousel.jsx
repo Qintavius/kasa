@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import './Carousel.scss';
 import caret from '../../assets/caret.svg';

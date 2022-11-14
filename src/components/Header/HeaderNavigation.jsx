@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './HeaderNavigation.scss'
 import headerLogo from '../../assets/logo.png'

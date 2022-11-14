@@ -10,6 +10,10 @@
     border-radius: 5px;
     background-color: $layout-background-gallery;
 
+    @media screen and (min-width: 700px) {
+        border-radius: 10px;
+    }
+
     .dropdown {
         display: flex;
         align-items: center;
@@ -22,6 +26,7 @@
         font-weight: 500;
         color: $text-color-white;
         text-transform: capitalize;
+
         @media screen and (min-width: 700px) {
             border-radius: 10px;
         }
@@ -32,6 +37,8 @@
         width: 15px;
         height: 15px;
         right: 10px;
+        background: none;
+        border: none;
         cursor: pointer;
         @media screen and (min-width: 700px) {
             width: 32px;
@@ -74,7 +81,4 @@
         }
     }
 
-    @media screen and (min-width: 700px) {
-        border-radius: 10px;
-    }
 }

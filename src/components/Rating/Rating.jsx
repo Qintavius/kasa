@@ -1,4 +1,3 @@
-import React from 'react';
 import './Rating.scss';
 import fullStar from '../../assets/fullStar.svg';
 import emptyStar from '../../assets/emptyStar.svg';
