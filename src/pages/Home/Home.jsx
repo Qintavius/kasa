@@ -1,6 +1,4 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
-// import FetchApi from '../../datas/FetchApi';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import './Home.scss';

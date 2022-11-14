@@ -1,8 +1,6 @@
-import React from 'react';
 import './Housing.scss';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-// import FetchApi from '../../datas/FetchApi';
 import Carousel from '../../components/Carousel/Carousel';
 import Tags from '../../components/Tags/Tags';
 import DropdownEquipments from '../../components/Dropdown/DropdownEquipments';

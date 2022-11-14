@@ -1,4 +1,3 @@
-import React from 'react';
 import AboutBanner from '../../components/Banner/AboutBanner';
 import DropdownAbout from '../../components/Dropdown/DropdownAbout';
 import './About.scss';
