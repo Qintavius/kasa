@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import About from './pages/About/About';
+import HeaderNavigation from './components/Header/HeaderNavigation';
 import Home from './pages/Home/Home';
 import Housing from './pages/Housing/Housing';
-import NotFound from './pages/Errors/NotFound/NotFound';
-import HeaderNavigation from './components/Header/HeaderNavigation';
+import About from './pages/About/About';
 import Footer from './components/Footer/Footer';
+import NotFound from './pages/Errors/NotFound/NotFound';
 
 const App = () => {
   return (
@@ -14,9 +14,8 @@ const App = () => {
         <HeaderNavigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route exact sensitive path='/about' element={<About />} />
-          <Route exact sensitive path='/housing/:id' element={<Housing />} />
-          <Route path='/housing/*' element={<NotFound />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/housing/:id' element={<Housing />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
