@@ -1,5 +1,5 @@
 import AboutBanner from '../../components/Banner/AboutBanner';
-import DropdownAbout from '../../components/Dropdown/DropdownAbout';
+import Dropdown from '../../components/Dropdown/Dropdown';
 import './About.scss';
 
 const About = () => {
@@ -13,10 +13,10 @@ const About = () => {
         <div className='about-container'>
             <AboutBanner />
             <div className='dropdown-info'>
-                <DropdownAbout title="Fiabilité" content={fiability}/>
-                <DropdownAbout title="Respect" content={respect}/>
-                <DropdownAbout title="Service" content={service}/>
-                <DropdownAbout title="Sécurité" content={security}/>
+                <Dropdown title="Fiabilité">{fiability}</Dropdown>
+                <Dropdown title="Respect">{respect}</Dropdown>
+                <Dropdown title="Service">{service}</Dropdown>
+                <Dropdown title="Sécurité">{security}</Dropdown>
             </div>
         </div>
     );
