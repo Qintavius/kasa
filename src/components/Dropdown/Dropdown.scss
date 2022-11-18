@@ -1,16 +1,16 @@
 @import '../../styles/index.scss';
 
 .dropdown-info {
+
     .dropdown-wrapper {
         max-width: 1023px;
 
+        .dropdown {
+            font-size: clamp(0.8125rem, 0.5145rem + 1.2717vw, 1.5rem);
+            font-weight: 500;
+        }
+
         .dropdown-content {
-
-            .dropdown {
-                font-size: clamp(0.8125rem, 0.5145rem + 1.2717vw, 1.5rem);
-                font-weight: 500;
-            }
-
             .content {
                 padding: 20px;
                 font-size: clamp(0.75rem, 0.3166rem + 1.849vw, 1.5rem);
